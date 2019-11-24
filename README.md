@@ -3,14 +3,12 @@
     public class Test1{
       private static int a;
       private int b;
-     public static void main(String[] args) {
+      public static void main(String[] args) {
       private static int j;
       private int k;      //main是静态方法，不能访问非静态变量k
-      public static void main(String[] args) {
-        int num=10;
-        Action5 act=(i)->System.out.println("j+K+i+num="+(j+i+num));
-          act.run(2);
-      }
+      int num=10;
+      Action5 act=(i)->System.out.println("j+K+i+num="+(j+i+num));
+      act.run(2);
     }
     interface Action5{
       public void run(int i);
